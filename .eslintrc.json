@@ -1,0 +1,34 @@
+{
+  "extends": ["next", "prettier"],
+  "plugins": ["eslint-plugin-import"],
+  "rules": {
+    "semi": "off",
+    "quotes": [
+      2,
+      "single",
+      {
+        "avoidEscape": true
+      }
+    ],
+    "sort-imports": [
+      "error",
+      {
+        "ignoreCase": true,
+        "ignoreDeclarationSort": true
+      }
+    ],
+    "import/order": [
+      1,
+      {
+        "groups": [
+          "external",
+          "builtin",
+          "internal",
+          "sibling",
+          "parent",
+          "index"
+        ]
+      }
+    ]
+  }
+}
